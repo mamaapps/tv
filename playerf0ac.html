@@ -1,0 +1,50 @@
+<script src="https://content.jwplatform.com/libraries/wB8onOoh.js" type="text/javascript"></script>
+<script type="text/javascript">
+        if(!FlashDetect.installed){
+            alert("Flash is required to use this site.");
+        }
+</script>
+
+<div class="col-sm-offset-4"><div id="playerVh1hF1z5roh2"></div>
+<script type="text/javascript">
+if( navigator.userAgent.match(/android/i)
+ || navigator.userAgent.match(/webOS/i)
+ || navigator.userAgent.match(/iPhone/i)
+ || navigator.userAgent.match(/iPad/i)
+ || navigator.userAgent.match(/iPod/i)
+ || navigator.userAgent.match(/BlackBerry/i)
+ || navigator.userAgent.match(/Windows Phone/i)
+ ) {
+            var stream = "http://103.211.185.98:8082/40/index.m3u8?token=94a8e28b9c299ecfa6ebb68d9817dc31c3ba4cb2-8011fc3595de4beb20bdf27a2fdc94ea-1601104887-1601094087&amp;remote=27.147.191.191";
+        }else{
+            var stream = "http://103.211.185.98:8082/40/index.m3u8?token=94a8e28b9c299ecfa6ebb68d9817dc31c3ba4cb2-8011fc3595de4beb20bdf27a2fdc94ea-1601104887-1601094087&amp;remote=27.147.191.191";
+        }
+  jwplayer("playerVh1hF1z5roh2").setup({
+  "title": "Mathanosto",
+"stretching":"exactfit",
+        "width": "100%",
+        "height": "100%",
+        "skin": "vapor",
+autostart:"true",
+"logo": {"file":"","margin":"-0", "position":"bottom-right","hide":"false","link":""},
+"androidhls": true,
+  "file": stream,
+			  
+            
+            
+            
+              });
+														 jwplayer("playerVh1hF1z5roh2").onError(function(){
+	jwplayer().load({file:"http://content.jwplatform.com/videos/7RtXk3vl-52qL9xLP.mp4",image:"http://content.jwplatform.com/thumbs/7RtXk3vl-480.jpg"});
+	jwplayer().play();
+});
+jwplayer("playerVh1hF1z5roh2").onComplete(function(){
+	window.location = window.location.href;
+}); 	  
+			  
+jwplayer("playerVh1hF1z5roh2").onPlay(function(){
+	clearTimeout(theTimeout);
+});
+
+
+</script>
